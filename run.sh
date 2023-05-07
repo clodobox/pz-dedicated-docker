@@ -1,0 +1,1 @@
+steamcmd +login anonymous +app_update 380870 +quit

@@ -5,8 +5,8 @@ services:
     build:
       context: .
       dockerfile: ./dockerfile
-    #command: run-renamer.sh
+    command: run.sh
     volumes:
-      - ./data:/data
+      - ./data:/root/Steam
     ports:
       - 16261:16261
