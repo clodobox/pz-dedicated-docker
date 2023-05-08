@@ -1,6 +1,6 @@
 echo set right...
-chown 1000:1000 /root/Steam/ 
-chown 1000:1000 /root/Zomboid/
+sudo chown 1026:1026 /root/Steam/ 
+sudo chown 1026:1026 /root/Zomboid/
 echo Install/Update game server
 steamcmd +login anonymous +app_update 380870 +quit
 echo Starting server...
