@@ -8,5 +8,12 @@ services:
     command: run.sh
     volumes:
       - ./data:/root/Steam
-    ports:
-      - 16261:16261
+      - ./zomboid:/root/Zomboid
+    #ports:
+    #  - 16261:16261/udp
+    #  - 16262:16262/udp
+    #  - 8766:8766/udp
+    #  - 8767:8767/udp
+    environment:
+      - ADMINPASSWORD:superlol1234
+    network_mode: host
